@@ -1,1 +1,24 @@
-<h2>der Krieger würde angemeldet</h2>
+<h2>ein Krieger anmelden</h2>
+<form action="/warrior" method="post">
+    <label for="name">
+        Name:<br>
+        <input type="text" name="name" minlength="3" maxlength="50"><br>
+    </label>
+    <label for="power">
+        Kraft:<br>
+        <input type="number" name="power" value="1" min="1" max="10"><br>
+    </label>
+    <label for="defence">
+        Abwehr:<br>
+        <input type="number" name="defence" value="1" min="1" max="10"><br>
+    </label>
+    <label for="durability">
+        Lebensdauer:<br>
+        <input type="number" name="durability" value="1" min="1" max="10"><br>
+    </label>
+    <label for="agility">
+        Agiliät:<br>
+        <input type="number" name="agility" value="1" min="1" max="10"><br>
+    </label>
+    <button type="submit">anmelden</button>
+</form>

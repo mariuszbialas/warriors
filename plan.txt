@@ -4,16 +4,25 @@ V:1.0.0
 - Express.js Konfiguration und Öffentlicher Ordner - statische Dateien
 - Routers Struktur, Pfads für Dateien - welsche Pfads usw. √
 	- Hauptseite √
-	- Krieger Anmeldung
-	  - Formular √
-	  - Speichern √
+	- Krieger Anmeldung √
+	  - Formular 
+	  - Speichern 
 	- Kampfarene √
-	  - Krieger Auswahl Formular √
-	  - Kampf Log - Kampf Info √
+	  - Krieger Auswahl Formular 
+	  - Kampf Log - Kampf Info 
 	- Ruhmeshalle √
-	  - Liste von beste Kämpfern √
+	  - Liste von beste Kämpfern 
 - Layouts(Views) planieren / Layouts Struktur √
-- Datensätze von Krieger
+- Datensätze von Krieger: √
+	- die Datensätze Name: megak_arena √
+	  id: uuid eindeutig(!)
+	  name: varchar() [Name]
+	  power: tinyint(2) [Kraft]
+	  defense: tinyint(2) [Abwehr]
+	  durability: tinyint(2) [Ausdauer]
+	  agility: tinyint(2) [Agilität]
+	  wins: int(11) - 0 (standardmäsig)
+	   
 - Logik zur Krieger bauen
 - Logik zur Ruhmeshalle bauen
 - Logik zur Kampfarene bauen
