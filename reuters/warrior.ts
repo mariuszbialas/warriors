@@ -4,7 +4,7 @@ export const warriorRouter = Router();
 
 warriorRouter
     .get('/add-form', (req, res) => {
-        res.send('Formular Krieger hinzufügen');
+        res.render('./warrior/add-form');
     })
     .get('/', (req, res) => {
         res.send('Kriger hinzufügen');

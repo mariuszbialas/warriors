@@ -2,7 +2,7 @@ V:1.0.0
 - Konfiguration von WS √
 - Gebrauchte Pakete und TS Konfiguration √
 - Express.js Konfiguration und Öffentlicher Ordner - statische Dateien
-- Routers Struktur, Pfads für Dateien - welsche Pfads usw.
+- Routers Struktur, Pfads für Dateien - welsche Pfads usw. √
 	- Hauptseite √
 	- Krieger Anmeldung
 	  - Formular √
@@ -12,7 +12,7 @@ V:1.0.0
 	  - Kampf Log - Kampf Info √
 	- Ruhmeshalle √
 	  - Liste von beste Kämpfern √
-- Layouts(Views) planieren / Layouts Struktur 
+- Layouts(Views) planieren / Layouts Struktur √
 - Datensätze von Krieger
 - Logik zur Krieger bauen
 - Logik zur Ruhmeshalle bauen

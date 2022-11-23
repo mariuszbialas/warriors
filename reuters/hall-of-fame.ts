@@ -4,5 +4,5 @@ export const hallOfFameRouter = Router();
 
 hallOfFameRouter
     .get('/', (req, res) => {
-        res.send('Beste Krieger Liste');
+        res.render('./hall-of-fame/list');
     });
