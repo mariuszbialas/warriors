@@ -7,17 +7,17 @@ V:1.0.0
 	- Krieger Anmeldung
 	  - Formular √
 	  - Speichern √
-	- Kämpfarene
-	  - Krieger Auswahl Formular
-	  - Kampf Log - Kampf Info
-	- Ruhmeshalle
-	  - Liste von beste Kämpfern
-- Layouts(Views) planieren / Layouts Struktur
+	- Kampfarene √
+	  - Krieger Auswahl Formular √
+	  - Kampf Log - Kampf Info √
+	- Ruhmeshalle √
+	  - Liste von beste Kämpfern √
+- Layouts(Views) planieren / Layouts Struktur 
 - Datensätze von Krieger
-- Logik zu die Krieger bauen
+- Logik zur Krieger bauen
 - Logik zur Ruhmeshalle bauen
-- Logik zur Kämpfarene bauen
+- Logik zur Kampfarene bauen
 
 V:1.1.0
 - Kampf Logs: Icons, verschieden Farbe hinzufügen
-- JavaScript Front-End bauen  - Punkte für verschiedene Kämpfer teilen usw. 
+- JavaScript Front-End bauen  - Punkte für verschiedene Krieger teilen usw. 
