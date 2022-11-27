@@ -10,7 +10,7 @@ warriorRouter
     })
     .post('/', async (req, res) => {
         if(await WarriorRecord.isNameTaken(req.body.name)) {
-            throw  new ValidationError(`Die Name \"${req.body.name}\" ist schon Verwendet!`);
+            throw  new ValidationError(`Der Name \"${req.body.name}\" ist schon Verwendet!`);
         }
 
         const warrior = new WarriorRecord({

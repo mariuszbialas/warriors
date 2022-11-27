@@ -31,11 +31,11 @@ export class WarriorRecord {
         }
 
         if(sum !== 10) {
-            throw new ValidationError(`Eine Summe aller Krieger-Statistiken muss 10 betragen! Derzeit ist die Summe: ${sum}.`);
+            throw new ValidationError(`Die Summe aller Krieger-Statistiken muss 10 betragen! Derzeit ist die Summe: ${sum}.`);
         }
 
         if(name.length < 3 && name.length > 50) {
-            throw new  ValidationError('Eine Name des Kriegers muss mindestens 3 Zeichen und darf höstens 50 Zeichnen lang sein!');
+            throw new  ValidationError('Der Name des Kriegers muss mindestens aus 3 Zeichen bestehen und darf höchstens 50 Zeichen lang sein!');
         }
 
         this.id = id ?? uuid();

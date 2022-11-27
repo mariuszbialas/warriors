@@ -8,6 +8,6 @@ export const handleError = (err: Error, req: Request, res: Response, next: NextF
     res
         .status(err instanceof ValidationError ? 400 : 500)
         .render('error', {
-            message: err instanceof ValidationError ? err.message : 'Sorry, probier mal noch mal'
+            message: err instanceof ValidationError ? err.message : 'Sorry, versuche es nochmal'
         });
 }

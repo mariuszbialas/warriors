@@ -2,7 +2,7 @@ V:1.0.0
 - Konfiguration von WS √
 - Gebrauchte Pakete und TS Konfiguration √
 - Express.js Konfiguration und Öffentlicher Ordner - statische Dateien
-- Routers Struktur, Pfads für Dateien - welsche Pfads usw. √
+- Routers Struktur, Pfads für Dateien - welche Pfads usw. √
 	- Hauptseite √
 	- Krieger Anmeldung √
 	  - Formular 
@@ -11,9 +11,9 @@ V:1.0.0
 	  - Krieger Auswahl Formular 
 	  - Kampf Log - Kampf Info 
 	- Ruhmeshalle √
-	  - Liste von beste Kämpfern 
+	  - Liste von besten Kämpfern 
 - Layouts(Views) planieren / Layouts Struktur √
-- Datensätze von Krieger: √
+- Datensätze von Kriegern: √
 	- die Datensätze Name: megak_arena √
 	  id: uuid eindeutig(!)
 	  name: varchar() [Name]
@@ -21,12 +21,46 @@ V:1.0.0
 	  defense: tinyint(2) [Abwehr]
 	  durability: tinyint(2) [Ausdauer]
 	  agility: tinyint(2) [Agilität]
-	  wins: int(11) - 0 (standardmäsig)
+	  wins: int(11) - 0 (standardmäßig)
 	   
-- Logik zur Krieger bauen
+- Logik zum Krieger bauen
 - Logik zur Ruhmeshalle bauen
 - Logik zur Kampfarene bauen
 
 V:1.1.0
 - Kampf Logs: Icons, verschieden Farbe hinzufügen
-- JavaScript Front-End bauen  - Punkte für verschiedene Krieger teilen usw. 
+- JavaScript Front-End bauen  - Punkte für verschiedene Krieger verteilen usw. 
+
+
+Registrierung & Kampf
+
+Die Kämpfer erhalten am Anfang Lebenspunkte, die sich aus der Kraft * 10 erschließen.
+Der verteidigende Kämpfer hat ein Verteidigungsschild, das sich aus der Summe der Abwehr & Agilität erschließt.
+
+Beispiel:
+Max
+Kraft = 4
+Abwehr = 3
+Lebensdauer:1
+Agilität = 2
+
+Lebenspunkte = 4 * 10 = 40 Pkt.
+Verteidigungsschild = (Abwehr)3 + (Agilität)2 = 5 Pkt.
+
+rejestracja i walka
+
+zawodnicy na starcie otrzymują punkty życia w ilości siła x 10
+zawodnik broniący się ma tarczę obronną jak sumę punktów obrony + zręczności
+
+Przyklad:
+Max
+Siła = 4
+Obrona = 3
+Wytrzymałość = 1
+Zwinność = 2
+
+Punkty życia = 4 x 10 = 40 Pkt.
+Tarcz = (Obrona)3 + (Zwinność)2 = 5 Pkt.
+
+
+

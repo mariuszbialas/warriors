@@ -1,6 +1,12 @@
-<h2>Wähle die Krieger aus, sie werden gegeneinander kämpfen</h2>
-<form action="/arena/fight" method="POST">
-    {{> warrior-select select-name="warrior1Id"}}
-    {{> warrior-select select-name="warrior2Id"}}
-    <button type="submit">Kampf um Leben und Tod starten</button>
-</form>
+<div class="wrapper">
+    <h2 class="big text">Wähle die Krieger aus, sie werden gegeneinander kämpfen</h2>
+    <form action="/arena/fight" method="POST" class="warrior-select">
+        <div>
+            {{> warrior-select select-name="warrior1Id"}}
+            {{> warrior-select select-name="warrior2Id"}}
+        </div>
+
+        <button type="submit" class="middle text">Kampf um Leben und Tod starten</button>
+    </form>
+</div>
+

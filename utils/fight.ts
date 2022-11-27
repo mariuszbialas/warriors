@@ -1,5 +1,4 @@
 import {WarriorRecord} from "../records/warrior.record";
-import {ifError} from "assert";
 
 export const fight = (warrior1: WarriorRecord, warrior2: WarriorRecord): {log: string[], winner: WarriorRecord} => {
     const log: string[] = [];
@@ -21,32 +20,30 @@ export const fight = (warrior1: WarriorRecord, warrior2: WarriorRecord): {log: s
     do {
         const attackStrength = attacker.warrior.power;
 
-        log.push(`Der ${attacker.warrior.name} fang Angriff auf den ${defender.warrior.name} an mit einer Kraft von ${attackStrength} Punkt(e)`);
+        log.push(`${attacker.warrior.name} greift ${defender.warrior.name} mit einer Kraft von ${attackStrength} Punkt(e) an`);
 
         if(defender.dp + defender.warrior.agility > attackStrength) {
-            log.push(`Der ${defender.warrior.name} verteitigt sich gegen den ${attacker.warrior.name} ` );
+            log.push(`${defender.warrior.name} verteitigt sich gegen ${attacker.warrior.name} ` );
             defender.dp -= attackStrength;
 
             if(defender.dp < 0) {
-                log.push(`Der ${attacker.warrior.name} hat die Abwehr vom ${defender.warrior.name} durchgebracht und hat sie beschädigen mit einer Kraft von ${attackStrength} Punkt(e)`);
+                log.push(`${attacker.warrior.name} hat die Abwehr vom ${defender.warrior.name} durchgebracht und hat mit einer Kraft von ${attackStrength} Punkt(e) Schaden verursacht`);
 
                 defender.hp += defender.dp;
                 defender.dp = 0;
             }
         } else {
-            log.push(`Der ${attacker.warrior.name} hat den ${defender.warrior.name} verletzt mit einer Kraft von ${attackStrength} Punkt(e)`);
+            log.push(`${attacker.warrior.name} hat  ${defender.warrior.name}  mit einer Kraft von ${attackStrength} Punkt(e) verletzt`);
             defender.hp -= attackStrength;
         }
-
-        //console.log(attacker.warrior.name, attackStrength, ' ---> ', defender.warrior.name, defender.dp, defender.hp);
+        log.push(`${defender.warrior.name} hat jetzt ${(defender.hp < 0) ? 0 : defender.hp} Lebenspunkt(e)`);
 
         [defender, attacker] = [attacker, defender];
 
+    } while (attacker.hp > 0);
 
-    } while (defender.hp > 0);
-
-    const winner = attacker.warrior;
-    log.push(`Der ${winner.name} hat der Kampf gewonnen!`)
+    const winner = defender.warrior;
+    log.push(`${winner.name} hat mit ${defender.hp} Lebenspunkt(e) den Kampf gewonnen!`)
 
     return {
         log,

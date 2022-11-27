@@ -1,19 +1,21 @@
-<h2>Ruhmeshalle</h2>
-<table>
-    <thead>
-        <tr>
-            <th>#</th>
-            <th>Kampf gewonnen</th>
-            <th>Name</th>
+<div class="wrapper">
+    <h2>Ruhmeshalle</h2>
+    <table>
+        <thead>
+        <tr class="text">
+            <th></th>
+            <th class="name">Name</th>
+            <th>Gewinne</th>
         </tr>
-    </thead>
-    <tbody>
+        </thead>
+        <tbody>
         {{#each warriors}}
-        <tr>
-            <th>{{this.place}}</th>
-            <td>{{this.warrior.wins}}</td>
-            <td>{{this.warrior.name}}</td>
-        </tr>
+            <tr>
+                <td class="text">{{this.place}}</td>
+                <td class="name text">{{this.warrior.name}}</td>
+                <td class="text">{{this.warrior.wins}}</td>
+            </tr>
         {{/each}}
-    </tbody>
-</table>
+        </tbody>
+    </table>
+</div>

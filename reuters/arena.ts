@@ -23,10 +23,10 @@ arenaRouter
         const warrior2 = await WarriorRecord.getOne(warrior2Id);
 
         if(!warrior1) {
-            throw new ValidationError('Der Krieger Nr.1 nicht gefunden!')
+            throw new ValidationError('Der Krieger Nr.1 wurde nicht gefunden!')
         }
         if(!warrior2) {
-            throw new ValidationError('Der Krieger Nr.1 nicht gefunden!')
+            throw new ValidationError('Der Krieger Nr.1 wurde nicht gefunden!')
         }
 
         const {log, winner} = fight(warrior1, warrior2);
@@ -34,6 +34,7 @@ arenaRouter
         await winner.update();
 
         res.render('./arena/fight', {
-            log, winner,
+            log: log.reverse(),
+            winner,
         });
     })

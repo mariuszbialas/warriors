@@ -16,7 +16,7 @@ app.use(methodOverride('_method'));
 app.use(urlencoded({
     extended: true,
 }));
-app.use(eStatic('public'));
+app.use(eStatic(__dirname + '/public'));
 app.engine('hbs', engine({
     extname: '.hbs',
     // helpers???,
