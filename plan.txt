@@ -47,20 +47,4 @@ Agilität = 2
 Lebenspunkte = 4 * 10 = 40 Pkt.
 Verteidigungsschild = (Abwehr)3 + (Agilität)2 = 5 Pkt.
 
-rejestracja i walka
-
-zawodnicy na starcie otrzymują punkty życia w ilości siła x 10
-zawodnik broniący się ma tarczę obronną jak sumę punktów obrony + zręczności
-
-Przyklad:
-Max
-Siła = 4
-Obrona = 3
-Wytrzymałość = 1
-Zwinność = 2
-
-Punkty życia = 4 x 10 = 40 Pkt.
-Tarcz = (Obrona)3 + (Zwinność)2 = 5 Pkt.
-
-
 
