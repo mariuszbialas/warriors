@@ -1,27 +1,35 @@
-<div class="wrapper">
+
     <h2>Einen Krieger anmelden</h2>
     <form action="/warrior" method="post" class="warrior-form">
-        <label for="name" class="middle warrior-name">
-            Name:
+        <div class="warrior-name">
+            <label for="name">
+                <span>Name</span>
+            </label>
             <input type="text" name="name" minlength="3" maxlength="50" class="middle">
-        </label><br>
-        <label for="power" class="middle warrior-inputs">
-            Kraft:
+        </div>
+
+        <label for="power" class="warrior-input">
+            <i class="fa-solid fa-battery-full"></i>
             <input type="number" name="power" value="1" min="1" max="10" class="middle center">
+            <span>Kraft</span>
         </label><br>
-        <label for="defence" class="middle warrior-inputs">
-            Abwehr:
+        <label for="defence" class="warrior-input">
+            <i class="fa-solid fa-shield-halved"></i>
             <input type="number" name="defence" value="1" min="1" max="10" class="middle center">
+            <span>Abwehr</span>
         </label><br>
-        <label for="durability" class="middle warrior-inputs">
-            Lebensdauer:
+        <label for="durability" class="warrior-input">
+            <i class="fa-regular fa-heart"></i>
             <input type="number" name="durability" value="1" min="1" max="10" class="middle center">
+            <span>Lebensdauer</span>
         </label><br>
-        <label for="agility" class="middle warrior-inputs">
-            Agiliät:
+        <label for="agility" class="warrior-input">
+            <i class="fa-solid fa-brain"></i>
             <input type="number" name="agility" value="1" min="1" max="10" class="middle center">
+            <span>Agiliät</span>
         </label><br>
-        <button type="submit" class="text middle">Anmelden</button>
+        <button type="submit" class="button">ANMELDEN</button>
     </form>
-</div>
+
+    <p class="warrior-info">Summe von allen Punkten muss genau 10 sein</p>
 

@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Marhey:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000;
+    list-style: none;
+}
+
+body {
+    font-family: 'Marhey', cursive;
+    letter-spacing: 1px;
+}
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+ul a {
+    padding-inline: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: red;
+
+}
+ul a:hover {
+    text-decoration: underline;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #ccc;
+}
+
+header .titel {
+    padding: 20px;
+}
+
+header .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img {
+    width: 140px;
+    border-radius: 50%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+    padding: 40px 0;
+    text-align: center;
+    margin-inline: auto;
+    overflow: scroll;
+}
+
+/* section HALL OF FAME */
+
+table {
+    width: 310px;
+    border-collapse: collapse;
+}
+table th, td {
+    padding: 5px 10px;
+}
+
+table td {
+    font-size: 20px;
+}
+
+tbody tr:first-child {
+    background-color: darkgoldenrod;
+    font-size: 28px;
+}
+tbody tr:first-child td{
+    border: 1px solid darkgoldenrod;
+    color: #fff;
+}
+
+/* section TEXT */
+
+.text {
+    letter-spacing: 2px;
+}
+.center {
+    text-align: center;
+}
+.big {
+    font-size: 28px;
+}
+
+.middle {
+    font-size: 20px;
+}
+.small {
+    font-size: 16px;
+}
+
+/* section WARRIOR REGISTER */
+
+.warrior-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.warrior-form input {
+    padding: 10px;
+}
+
+.warrior-form button,
+.warrior-select button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 600px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Marhey', cursive;
+    background-color: darkgoldenrod;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.warrior-name, .warrior-inputs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 310px;
+}
+
+/* section WARRIOR SELECT*/
+
+.warrior-select {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+}
+
+.warrior-select__option {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 45%;
+}
+
+/* section FIGHT */
+
+.fight li:nth-child(even) {
+    background-color: #ddd;
+}
+
+ .fight li:first-child {
+     color: darkgoldenrod;
+     text-transform: uppercase;
+     font-weight: bold;
+     background-color: transparent;
+ }
+
+ .list-of-fighter {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     gap: 5px;
+
+ }
+
+ .fighter {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 150px;
+     height: 150px;
+     padding: 10px;
+     border: 1px solid black;
+     font-size: 12px;
+ }
+
+
+/* */
+
+/* section ERROR */
+
+.error {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.16);
+    border: 2px solid red;
+}
+
+.error h2 {
+    color: red;
+}
+

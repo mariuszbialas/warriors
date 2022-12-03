@@ -20,30 +20,27 @@ export const fight = (warrior1: WarriorRecord, warrior2: WarriorRecord): {log: s
     do {
         const attackStrength = attacker.warrior.power;
 
-        log.push(`${attacker.warrior.name} greift ${defender.warrior.name} mit einer Kraft von ${attackStrength} Punkt(e) an`);
+        log.push(`${(attacker.warrior.name).toUpperCase()}(${attacker.hp}) greift ${(defender.warrior.name).toUpperCase()}(${defender.hp}) an`);
 
         if(defender.dp + defender.warrior.agility > attackStrength) {
-            log.push(`${defender.warrior.name} verteitigt sich gegen ${attacker.warrior.name} ` );
             defender.dp -= attackStrength;
 
             if(defender.dp < 0) {
-                log.push(`${attacker.warrior.name} hat die Abwehr vom ${defender.warrior.name} durchgebracht und hat mit einer Kraft von ${attackStrength} Punkt(e) Schaden verursacht`);
 
                 defender.hp += defender.dp;
                 defender.dp = 0;
             }
         } else {
-            log.push(`${attacker.warrior.name} hat  ${defender.warrior.name}  mit einer Kraft von ${attackStrength} Punkt(e) verletzt`);
             defender.hp -= attackStrength;
         }
-        log.push(`${defender.warrior.name} hat jetzt ${(defender.hp < 0) ? 0 : defender.hp} Lebenspunkt(e)`);
+        log.push(`${(defender.warrior.name).toUpperCase()} hat jetzt ${(defender.hp < 0) ? 0 : defender.hp} Lebenspunkt(e)`);
 
         [defender, attacker] = [attacker, defender];
 
     } while (attacker.hp > 0);
 
     const winner = defender.warrior;
-    log.push(`${winner.name} hat mit ${defender.hp} Lebenspunkt(e) den Kampf gewonnen!`)
+    log.push(`${winner.name} hat den Kampf gewonnen!`)
 
     return {
         log,

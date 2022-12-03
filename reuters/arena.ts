@@ -8,6 +8,7 @@ export const arenaRouter = Router();
 arenaRouter
     .get('/fight-form', async (req, res) => {
         const warriors = await WarriorRecord.getAll();
+
         res.render('./arena/fight-form', {
             warriors,
         });
